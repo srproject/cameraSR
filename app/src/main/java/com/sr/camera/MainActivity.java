@@ -2,6 +2,7 @@ package com.sr.camera;
 
 import android.graphics.PixelFormat;
 import android.hardware.Camera;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.SurfaceHolder;
@@ -21,7 +22,7 @@ public class MainActivity extends AppCompatActivity implements SurfaceHolder.Cal
     SurfaceView camView; // drawing camera preview using this variable
     SurfaceHolder surfaceHolder; // variable to hold surface for surfaceView which means display
     boolean camCondition = false;  // conditional variable for camera preview checking and set to false
-    Button cap;    // image capturing button
+    FloatingActionButton cap;    // image capturing button
 
     @SuppressWarnings("deprecation")
     @Override
@@ -70,7 +71,7 @@ public class MainActivity extends AppCompatActivity implements SurfaceHolder.Cal
 
 
         // refering button id
-        cap = (Button) findViewById(R.id.Bcapture);
+        cap = (FloatingActionButton) findViewById(R.id.Bcapture);
         // click event on button
         cap.setOnClickListener(new View.OnClickListener() {
 
